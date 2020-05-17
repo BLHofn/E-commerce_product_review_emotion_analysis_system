@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>毕设信息展示</title>
+</head>
+
+<link rel="stylesheet" href="../static/css/default.min.css">
+<link rel="stylesheet" href="../static/css/style1.css" />
+
+<link rel="stylesheet" href="../static/layui/css/layui.css">
+<link rel="stylesheet" href="../static/css/index.css">
+<link rel="stylesheet" href="../static/css/grjs.css" />
+ <link rel="icon" href="../static/img/logo.jpg">
+<body class="inpit">
+<div id="inpitassembly" formname="demonstration">
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+		<tr>
+			<th><a href="{% url 'index' %}">首页</a></th>
+            <th><a href="{% url 'grjs' %}">个人介绍</a></th>
+            <th><a href="{% url 'xx' %}">学校</a></th>
+            <th><a href="{% url 'mp3' %}">mp3</a></th>
+            <th><a href="{% url 'lyb' %}">留言板</a></th>
+            <th><a href="{% url 'login' %}">请登录</a></th>
+		</tr>
+    </table>
+    <hr>
+	<h2 class="t">通信与信息工程学院学生毕业设计选题报告</h2>
+    <h2>题&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目：电商产品评论数据情感分析系统实现</h2>
+    <h2>指导老师：张龙妹</h2>
+    <h2>学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;生：夏胜生</h2>
+    <hr>
+    <h3>选题意义</h3>
+	<p>
+		随着电子商务的迅速发展和网络购物的流行，人们对于网购的需求变得越来越高，了解更多消费者的心声对电商企业来说变得越来越有必要。而评论信息中蕴含着消费者对特定产品和服务的主观感受，反应了人们的态度、立场和意见，具有非常宝贵的研究价值。对电商产品评论数据进行分析和处理，并提取有用的信息对电商企业和消费者都具有很大的参考价值和实用价值。
+	</p>
+    <hr>
+    <h3>所需基础知识（课程）</h3>
+    <p>模式识别、数据结构与算法、Python程序设计</p>
+    <hr>
+    <h3>题目类型</h3>
+	<p>A：研究型           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;√ B：应用型</p>
+    <hr>
+    <h3>设计内容</h3>
+    <p>对京东商城上美的电热水器的文本评论数据进行爬取，预处理，情感分析和主题特征提取。</p>
+    <hr>
+    <h3>主要功能及技术指标</h3>
+    <p>①	利用Python对京东商城中美的电热水器的评论进行爬取；</p>
+    <p>②	对评论文本数据进行数据清洗、分词、停用词过滤等操作；</p>
+    <p>③	对预处理后的数据进行情感分析，将评论文本数据按照情感倾向分为正面评论数据（好评）和负面评论数据（差评）；</p>
+    <p>④	分别对正、负面评价数据进行LDA主题分析，从对应的结果分析文本评论数据中有价值的内容。</p>
+    <hr>
+    <h3>进度安排</h3>
+    <p>①	查阅资料、收集并筛选相关文献，搭建Python开发环境（2周）；</p>
+    <p> ②	熟悉python开发环境，了解数据爬取和挖掘中用到的相关技术（2周）；</p>
+    <p>③	数据的爬取（2周）；</p>
+    <p> ④	数据清洗、分词和去停用词（2周）；</p>
+    <p> ⑤	对清洗后的数据进行情感分析（2周）；</p>
+    <p>⑥	对正、负评价数据进行主题分析（2周）；</p>
+    <p> ⑦	系统整体功能的完善和优化（2周）；</p>
+    <p> ⑧	撰写、修改毕业论文，准备毕业答辩（2周）。</p>
+    <hr>
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+		<tr>
+			<th>是否创新题目</th>
+			<th colspan="4">预期价值(用√选择，可多选)</th>
+		</tr>
+		<tr>
+			<td rowspan="3" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;否</td>
+			<td>隶属科研</td>
+			<td>发表论文</td>
+			<td>实际应用</td>
+			<td>其它</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>√</td>
+			<td></td>
+			<td>√</td>
+		</tr>
+		<tr>
+			<td>创新点</td>
+            <td colspan="4"></td>
+		</tr>
+		<tr>
+			<td>系毕业设计指导小组意见</td>
+			<td>工作量评价</td>
+			<td>难度评价</td>
+			<td>综合训练程度</td>
+			<td>是否结合生产实际</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>A</td>
+			<td>A</td>
+			<td>A</td>
+			<td>是</td>
+		</tr>
+		<tr>
+			<td>院毕业设计指导委员会意见</td>
+			<td colspan="4"></td>
+		</tr>
+    </table>
+    <hr>
+	<p>注：①工作量评价为：A较重、B适中、C较轻；②难度评价为：A较难、B适中、C较易；③综合训练程度评价为：A全面、B较全面、C一般。④“是否结合生产实际”必填，“指导小组”“指导委员会意见”不填。</p>
+	<h3 class="t"><span>结果展示</span>1.正负面评价</h3>
+    <img src="../static/img/正负面评价.jpg" width="100%">
+    <h3 class="t"><span>结果展示</span>2.正负面评价词云</h3>
+    <h2 style="color: #00FF00;">正面评价词云</h2>
+    <img src="../static/img/pos.jpg" width="100%">
+    <hr size="100">
+     <h2 style="color: deeppink">负面评价词云</h2>
+    <img src="../static/img/neg.jpg" width="100%">
+</div>
+
+<!-- footer部分 -->
+		<div class="footer">
+			<div class="layui-container">
+				<p class="footer-web">
+					<a href="https://www.xust.edu.cn/">西科大学官网</a>
+					<a href="https://jwc.xust.edu.cn/">西科大教务处</a>
+					<a href="http://jwsso.xust.edu.cn/auth/oauth/login?login_type=normal">大学生毕业设计(论文)管理系统</a>
+					<a href="https://www.cnki.net/">中国知网</a>
+					<a href="https://www.icourse163.org/">中国大学MOOC(慕课)</a>
+                    <a href="https://www.w3school.com.cn/index.html">w3school在线教程</a>
+				</p>
+			</div>
+		</div>
+		<script src="../static/layui/layui.js"></script>
+		<!--[if lt IE 9]>
+  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+		<script>
+			layui.config({
+				base: '../static/js/'
+			}).use('firm');
+		</script>
+</body>
+</html>

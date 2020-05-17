@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+  <title>我的大学生活</title>
+  <link rel="stylesheet" href="../static/layui/css/layui.css">
+  <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="icon" href="../static/img/logo.jpg">
+</head>
+<body>
+  <!-- nav部分 -->
+  <div class="nav index">
+    <div class="layui-container">
+      <!-- logo -->
+      <div class="nav-logo">
+        <a href="{% url 'index' %}">
+          <img src="../static/img/logo.png" width="100px" height="80px" alt="大学生活">
+        </a>
+      </div>
+      <div class="nav-list">
+        <button>
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="layui-nav" lay-filter="">
+          <li class="layui-nav-item layui-this"><a href="{% url 'index' %}">首页</a></li>
+          <li class="layui-nav-item"><a href="{% url 'grjs' %}">个人介绍</a></li>
+          <li class="layui-nav-item "><a href="{% url 'bsxx' %}">毕设信息展示</a></li>
+          <li class="layui-nav-item"><a href="{% url 'xx' %}">学校</a></li>
+          <li class="layui-nav-item"><a href="{% url 'mp3' %}">mp3</a></li>
+          <li class="layui-nav-item"><a href="{% url 'lyb' %}">留言板</a></li>
+            <li class="layui-nav-item"><a href="{% url 'login' %}">请登录</a></li>
+
+        </ul>
+        <button>输入法</button>
+      </div>
+    </div>
+  </div>
+  <!-- banner部分 -->
+  <div>
+    <div class="layui-carousel" id="banner">
+      <div carousel-item>
+        <div>
+          <img src="../static/img/banner1.jpg">
+          <div class="panel">
+            <p class="title">Welcome</p>
+            <p>我的大学生活</p>
+          </div>
+        </div>
+        <div>
+          <img src="../static/img/banner2.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer部分 -->
+  <div class="footer">
+    <div class="layui-container">
+      <p class="footer-web">
+{#          <label ><font color="#0000FF" size="4">如有需要请点击：</font></label>#}
+        <a href="https://www.xust.edu.cn/">西安科技大学官网</a>
+        <a href="https://jwc.xust.edu.cn/">西安科技大学教务处</a>
+        <a href="http://jwsso.xust.edu.cn/auth/oauth/login?login_type=normal">大学生毕业设计(论文)管理系统</a>
+        <a href="https://www.cnki.net/">中国知网</a>
+          <a href="https://www.icourse163.org/">中国大学MOOC(慕课)</a>
+          <a href="https://www.w3school.com.cn/index.html">w3school在线教程</a>
+      </p>
+      <div class="layui-row footer-contact">
+        <div class="layui-col-sm2 layui-col-lg1"><img src="../static/img/erweima.png"></div>
+        <div class="layui-col-sm10 layui-col-lg11">
+          <div class="layui-row">
+            <div class="layui-col-sm6 layui-col-md8 layui-col-lg9">
+              <p class="contact-top">本站部分文章、资源来自互联网，版权归原作者及网站所有</p>
+              <p class="contact-bottom">如果侵犯了您的权利，请及时致信告知我站</p>
+            </div>
+            <div class="layui-col-sm6 layui-col-md4 layui-col-lg3">
+              <p class="contact-top"><span class="right">陕西省西安市西安科技大学</span></p>
+              <p class="contact-bottom"><span class="right">Copyright&nbsp;©&nbsp;2019-2020 毕业设计</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="../static/layui/layui.js"></script>
+<!--[if lt IE 9]>
+  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script>
+  layui.config({
+    base: '../static/js/'
+  }).use('firm'); 
+</script>
+</body>
+</html>

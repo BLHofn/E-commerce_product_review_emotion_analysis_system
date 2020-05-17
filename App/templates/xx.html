@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+		<title>我的大学生活-学校</title>
+		<link rel="stylesheet" href="../static/layui/css/layui.css">
+		<link rel="stylesheet" href="../static/css/index.css">
+        <link rel="icon" href="../static/img/logo.jpg">
+	</head>
+
+	<body>
+		<!-- nav部分 -->
+		<div class="nav">
+			<div class="layui-container">
+				<!-- logo -->
+				<div class="nav-logo">
+					<a href="{% url 'index' %}">
+						<img src="../static/img/logo.png" style="width: 150px" height="90px" alt="大学生活">
+					</a>
+				</div>
+				<div class="nav-list">
+					<button>
+          <span></span><span></span><span></span>
+        </button>
+					<ul class="layui-nav" lay-filter="">
+						<li class="layui-nav-item">
+							<a href="{% url 'index' %}">首页</a>
+						</li>
+						<li class="layui-nav-item">
+							<a href="{% url 'grjs' %}">个人介绍</a>
+						</li>
+						<li class="layui-nav-item ">
+							<a href="{% url 'bsxx' %}">毕设信息展示</a>
+						</li>
+						<li class="layui-nav-item layui-this">
+							<a href="{% url 'xx' %}">学校</a>
+						</li>
+{#						<li class="layui-nav-item">#}
+{#							<a href="{% url 'zygh' %}">职业规划</a>#}
+{#						</li>#}
+                        <li class="layui-nav-item"><a href="{% url 'mp3' %}">mp3</a></li>
+						<li class="layui-nav-item">
+							<a href="{% url 'lyb' %}">留言板</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- banner部分 -->
+		<div class="banner xx">
+			<div class="title">
+				<p>我的学校</p>
+				<p class="en">My Shool</p>
+			</div>
+		</div>
+		<div class="main-about">
+			<div class="layui-container">
+				<div class="layui-row">
+					<ul class="aboutab">
+{#						<li>#}
+{#							<a href="{% url 'zz' %}">五大组织</a>#}
+{#						</li>#}
+						<li>
+							<a href="https://www.xust.edu.cn/">西安科技大学</a>
+						</li>
+
+{#						<li>#}
+{#							<a href="{% url 'sl' %}">48个社团</a>#}
+{#						</li>#}
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- main部分 -->
+		<div class="xxtp">
+			<img src="../static/img/xx1.jpg" />
+			<img src="../static/img/xx4.jpg" />
+		</div>
+		<br />
+		<div class="xxtp2">
+			<img src="../static/img/xx3.jpg" />
+			<img src="../static/img/xx2.jpg" />
+		</div>
+		<!-- footer部分 -->
+		<div class="footer">
+			<div class="layui-container">
+				<p class="footer-web">
+{#                    <label ><font color="#0000FF" size="4">如有需要请点击：</font></label>#}
+					<a href="https://www.xust.edu.cn/">西安科技大学官网</a>
+					<a href="https://jwc.xust.edu.cn/">西安科技大学教务处</a>
+					<a href="http://jwsso.xust.edu.cn/auth/oauth/login?login_type=normal">大学生毕业设计(论文)管理系统</a>
+				    <a href="https://www.cnki.net/">中国知网</a>
+					<a href="https://www.icourse163.org/">中国大学MOOC(慕课)</a>
+                    <a href="https://www.w3school.com.cn/index.html">w3school在线教程</a>
+				</p>
+				<div class="layui-row footer-contact">
+					<div class="layui-col-sm2 layui-col-lg1"><img src="../static/img/erweima.png"></div>
+					<div class="layui-col-sm10 layui-col-lg11">
+						<div class="layui-row">
+							<div class="layui-col-sm6 layui-col-md8 layui-col-lg9">
+								<p class="contact-top">本站部分文章、资源来自互联网，版权归原作者及网站所有</p>
+								<p class="contact-bottom">如果侵犯了您的权利，请及时致信告知我站</p>
+							</div>
+							<div class="layui-col-sm6 layui-col-md4 layui-col-lg3">
+								<p class="contact-top"><span class="right">陕西省西安市西安科技大学</span></p>
+                                <p class="contact-bottom"><span class="right">Copyright&nbsp;©&nbsp;2019-2020 毕业设计</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../static/layui/layui.js"></script>
+		<!--[if lt IE 9]>
+  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+		<script>
+			layui.config({
+				base: '../static/js/'
+			}).use('firm');
+		</script>
+	</body>
+
+</html>
